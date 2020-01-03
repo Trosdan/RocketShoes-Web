@@ -5,12 +5,26 @@ export const Container = styled.div`
   padding: 30px;
   background: #fff;
   border-radius: 4px;
+  overflow-x: auto;
 
   footer {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        margin-top: 10px;
+      }
+
+    }
 
     button {
       background: #7159c1;

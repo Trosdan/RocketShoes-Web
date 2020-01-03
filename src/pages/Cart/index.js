@@ -38,6 +38,10 @@ export default function Cart() {
     dispatch(CartActions.updateAmountRequest(product.id, product.amount - 1));
   }
 
+  function checkout() {
+    // dispatch(CartActions.checkout())
+  }
+
   return (
     <Container>
       <ProductTable>
@@ -90,11 +94,11 @@ export default function Cart() {
       </ProductTable>
 
       <footer>
-        <button type="button">Finalizar pedido</button>
         <Total>
           <span>TOTAL</span>
           <strong>{total}</strong>
         </Total>
+        <button type="button" onClick={() => checkout()}>Finalizar pedido</button>
       </footer>
     </Container>
   );
