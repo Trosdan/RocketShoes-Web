@@ -1,8 +1,8 @@
 {
-  "name": "modulo07",
+  "name": "rocketshoes-jordanoliveira",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trosdan.github.io/RocketShoes-Web/",
+  "homepage": "https://rocketshoes.jordanoliveira.dev",
   "dependencies": {
     "axios": "^0.19.0",
     "gh-pages": "^2.1.1",
