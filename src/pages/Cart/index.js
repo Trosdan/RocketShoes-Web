@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
+import Lottie from 'react-lottie';
 
 import { formatPrice } from '../../utils/format';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
 import { Container, ProductTable, Total } from './styles';
+import * as checkoutData from '../../assets/anim/checkout.json';
 
 export default function Cart() {
+  const [isPaused, setIsPaused] = useState(false);
+
   const total = useSelector(state =>
     formatPrice(
       state.cart.reduce((totalSum, product) => {
@@ -43,6 +47,7 @@ export default function Cart() {
   }
 
   return (
+    <>
     <Container>
       <ProductTable>
         <thead>
@@ -101,5 +106,14 @@ export default function Cart() {
         <button type="button" onClick={() => checkout()}>Finalizar pedido</button>
       </footer>
     </Container>
+    <Container>
+      <Lottie options={{animationData: checkoutData.default, loop: false, autoplay: true}} height='100' width='100' isPaused={isPaused} eventListeners={[
+        {
+          eventName: 'enterFrame',
+          callback: (frame) => {if(frame.currentTime > 100){ setIsPaused(true); }}
+        }
+      ]} />
+    </Container>
+    </>
   );
 }
