@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/RocketShoes-Web/static/js/main.aca1c0cc.chunk.js",
-    "main.js.map": "/RocketShoes-Web/static/js/main.aca1c0cc.chunk.js.map",
-    "runtime~main.js": "/RocketShoes-Web/static/js/runtime~main.934fb9f2.js",
-    "runtime~main.js.map": "/RocketShoes-Web/static/js/runtime~main.934fb9f2.js.map",
-    "static/css/2.5dbdccff.chunk.css": "/RocketShoes-Web/static/css/2.5dbdccff.chunk.css",
-    "static/js/2.7212b69e.chunk.js": "/RocketShoes-Web/static/js/2.7212b69e.chunk.js",
-    "static/js/2.7212b69e.chunk.js.map": "/RocketShoes-Web/static/js/2.7212b69e.chunk.js.map",
-    "index.html": "/RocketShoes-Web/index.html",
-    "precache-manifest.35598ed622e2e4f74600545d13751cb4.js": "/RocketShoes-Web/precache-manifest.35598ed622e2e4f74600545d13751cb4.js",
-    "service-worker.js": "/RocketShoes-Web/service-worker.js",
-    "static/css/2.5dbdccff.chunk.css.map": "/RocketShoes-Web/static/css/2.5dbdccff.chunk.css.map",
-    "static/media/background.svg": "/RocketShoes-Web/static/media/background.3c9a1ce5.svg",
-    "static/media/logo.svg": "/RocketShoes-Web/static/media/logo.879557c5.svg"
+    "main.js": "/static/js/main.aca1c0cc.chunk.js",
+    "main.js.map": "/static/js/main.aca1c0cc.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.a346064a.chunk.js": "/static/js/2.a346064a.chunk.js",
+    "static/js/2.a346064a.chunk.js.map": "/static/js/2.a346064a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.69732dd346a11c88831d3d6dbcb757a7.js": "/precache-manifest.69732dd346a11c88831d3d6dbcb757a7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "/static/css/2.5dbdccff.chunk.css.map",
+    "static/media/background.svg": "/static/media/background.3c9a1ce5.svg",
+    "static/media/logo.svg": "/static/media/logo.879557c5.svg"
   }
 }
