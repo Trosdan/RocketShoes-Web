@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   MdRemoveCircleOutline,
@@ -13,8 +13,10 @@ import * as CartActions from '../../store/modules/cart/actions';
 
 import { Container, ProductTable, Total } from './styles';
 import * as checkoutData from '../../assets/anim/checkout.json';
+import Modal from '../../components/Modal';
 
 export default function Cart() {
+  const [showModal, setShowModal] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
 
   const total = useSelector(state =>
@@ -42,8 +44,9 @@ export default function Cart() {
     dispatch(CartActions.updateAmountRequest(product.id, product.amount - 1));
   }
 
-  function checkout() {
-    // dispatch(CartActions.checkout())
+  function handlerClose() {
+    setShowModal(false)
+    // dispatch(CartActions.updateAmountRequest(product.id, product.amount - 1));
   }
 
   return (
@@ -103,17 +106,17 @@ export default function Cart() {
           <span>TOTAL</span>
           <strong>{total}</strong>
         </Total>
-        <button type="button" onClick={() => checkout()}>Finalizar pedido</button>
+        <button type="button" onClick={() => setShowModal(true)}>Finalizar pedido</button>
       </footer>
     </Container>
-    <Container>
+    <Modal show={showModal} handlerClose={() => handlerClose()}>
       <Lottie options={{animationData: checkoutData.default, loop: false, autoplay: true}} height='100' width='100' isPaused={isPaused} eventListeners={[
         {
           eventName: 'enterFrame',
           callback: (frame) => {if(frame.currentTime > 100){ setIsPaused(true); }}
         }
       ]} />
-    </Container>
+    </Modal>
     </>
   );
 }
