@@ -1,6 +1,7 @@
 {
   "short_name": "RocketShoes",
   "name": "RocketShoes",
+  "prefer_related_applications": true,
   "icons": [
     {
       "src": "icon.png",
