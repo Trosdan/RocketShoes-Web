@@ -9,7 +9,9 @@
     }
   ],
   "start_url": "/",
+  "related_applications": [],
   "display": "standalone",
   "theme_color": "#4bb0ee",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "lang": "pt-BR"
 }
